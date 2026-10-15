@@ -1,58 +1,197 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
+
+# ⚡ FITNES — Pro Athlete Club & Fitness Management Platform
+
+**A Modern, High-Performance Gym Management & Member Fitness Tracking Ecosystem built with Laravel & Tailwind CSS.**
+
+[![PHP Version](https://img.shields.io/badge/PHP-8.2%20%7C%208.3%20%7C%208.5-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+[![Laravel Framework](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![Vite Bundler](https://img.shields.io/badge/Vite-6.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![PHPUnit Tests](https://img.shields.io/badge/Tests-12%20Passed%20(43%20assertions)-38ef7d?style=for-the-badge&logo=githubactions&logoColor=white)](https://phpunit.de)
+[![License](https://img.shields.io/badge/License-MIT-e2ff38?style=for-the-badge&logo=open-source-initiative&logoColor=black)](LICENSE)
+
+<br>
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <a href="#-key-features">Key Features</a> •
+  <a href="#-tech-stack--architecture">Tech Stack</a> •
+  <a href="#-quick-start--installation">Quick Start</a> •
+  <a href="#-demo-credentials">Demo Credentials</a> •
+  <a href="#-automated-testing">Testing</a> •
+  <a href="#-license">License</a>
 </p>
 
-## About Laravel
+</div>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🌟 Overview
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**FITNES** is an end-to-end, dark-themed fitness club portal engineered for modern gyms, athletes, and coaches. It merges a bold marketing showcase with an advanced athlete member dashboard, personal record tracking, routine builders, e-commerce supplement store, and ultra-fast backend architecture.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## ⚡ Key Features
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 🏋️‍♂️ 1. Member Profile & Digital Barcode Pass
+* **Simulated Laser RFID Barcode**: High-density 38-line simulated barcode card with dynamic athlete Gym ID (`{{ gym_id }}-SECURE-PASS`).
+* **Turnstile Front-Desk Notice**: Built-in reception guidance for instant contactless check-in at Gate A turnstiles.
+* **Membership Status**: Real-time package info (Pro Athlete Membership, VIP Locker, Sauna & Cold Plunge Lounge, billing dates, emergency contacts).
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+### 📝 2. Daily Workout & Set Logger
+* **Muscle Group Filter**: Quick filter pills for `Chest`, `Back`, `Legs`, `Shoulders`, `Arms`, and `Core`.
+* **Metric Logging**: Log Exercise Name, Target Weight (kg), Sets, and Reps with instant database persistence.
+* **Activity Metrics**: Real-time calculation of total visits, monthly attendance vs. targets, active weekly streaks, and recent workout history.
 
-## Agentic Development
+### 📊 3. Weekly Body Composition & Transformation Progress
+* **Weigh-in Tracking**: Record body weight (kg), estimated body fat percentage (%), and waist circumference (cm).
+* **Transformation Milestones**: Visual transformation cards tracking 8-week progress milestones with interactive logging.
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+### 🏆 4. Gym Consistency Leaderboard & Heavy Lifter PR Wall
+* **Monthly Top 10 Athletes**: Real-time ranking of the most consistent athletes with 🥇 Gold, 🥈 Silver, and 🥉 Bronze medals, attendance days, and streak counters.
+* **Heavy Lifters PR Wall**: Official records for **Bench Press** (up to 165 kg), **Barbell Squat** (up to 225 kg), and **Deadlift** (up to 265 kg) with athlete attribution and verification badges.
+* **Hall of Fame**: Recognizing long-term athletic discipline and personal bests.
 
+### 🏅 5. Athlete Milestone Badges
+* **Century Club**: 100 days gym attendance progress (e.g. 68/100).
+* **Iron Warrior**: Unlocked milestone for lifting 100+ kg in a single verified session.
+* **Early Bird Striker**: Morning warrior badge for 20 workouts completed before 7:00 AM.
+* **Consistency King**: Dynamic badge celebrating active 4+ week consecutive attendance streaks.
+
+### 📋 6. Smart Workout Routine Generator (1-Click Auto Loader)
+* **Curated Splits**:
+  * **Push / Pull / Legs (PPL)** — 6-Day Hypertrophy periodization.
+  * **Upper / Lower Split** — 4-Day Strength & Power split.
+  * **Full Body Shred** — 3-Day Conditioning & Functional split.
+* **⚡ 1-Click Load**: Clicking `Load` instantly populates the exercise name, target weight, sets, and reps into the tracker form and smooth-scrolls right into the logger with zero manual typing.
+
+### 🛒 7. Athlete Supplement & Gear Pro Shop
+* **Uniform Product Grid**: Supplements, gym apparel, and recovery gear with authentic badges (`Best Seller`, `Elite Formula`, `Hot Deal`), star ratings, and prices.
+* **Real-Time Interactive Cart**: Flyout drawer cart with live subtotal calculation, discount deduction, and quantity adjustments.
+* **Checkout Gateway**: Multi-payment support including **bKash**, **Nagad**, **Card (Visa/Mastercard)**, and **Cash on Reception** with automatic order tracking.
+
+### 🔐 8. Sleek In-Modal Password Reset
+* **Zero Browser Popups**: Completely replaces annoying native browser alerts with a polished 3-step in-modal workflow.
+* **Auto-Prefill & Synchronization**: Automatically syncs typed email credentials from the login form to the recovery input.
+* **Animated Feedback**: Live loading spinner (`Dispatching Link...`), validated confirmation view, and **60-second cooldown timer**.
+
+### ⚡ 9. Full-Stack Performance Engine
+* **SQLite Concurrency & WAL**: Powered by Write-Ahead Logging (`WAL`), `synchronous = NORMAL`, and `busy_timeout = 5000` for non-blocking parallel read/write performance.
+* **Multi-Worker Local Serving**: Supports multi-threaded parallel asset delivery (`PHP_CLI_SERVER_WORKERS=4`).
+* **Image Lazy Loading**: Universal browser-level `loading="lazy"` and `decoding="async"` across all media, saving over **9 MB** on initial page render.
+* **CDN Preconnects**: Network preconnect headers for Cloudflare and Font Awesome assets.
+
+---
+
+## 🛠 Tech Stack & Architecture
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Backend** | **PHP 8.5** / **Laravel 12.x** (Artisan, Eloquent ORM, Seeders, Migrations) |
+| **Frontend** | **Tailwind CSS v3.4**, **Blade Templating**, **Font Awesome 6**, **Vanilla JS** |
+| **Bundler** | **Vite 6** (CSS/JS minification, Font manifests, Autoprefixer) |
+| **Database** | **SQLite (WAL Mode)** / MySQL / PostgreSQL compatible |
+| **Testing** | **PHPUnit 11** with custom Feature & Unit test suites |
+| **Code Style** | **Laravel Pint** (100% PSR-12 code compliance) |
+
+---
+
+## 🚀 Quick Start & Installation
+
+Follow these steps to set up the project locally:
+
+### 1. Clone the repository
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+git clone https://github.com/tanvirahmadrahad/Gym.git
+cd Gym
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+### 2. Install PHP & Node dependencies
+```bash
+composer install
+npm install
+```
 
-## Contributing
+### 3. Environment configuration
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 4. Database Setup & Seeding
+```bash
+# Runs all migrations and seeds store products, routines, PR wall, and member profiles
+php artisan migrate --seed
+```
 
-## Code of Conduct
+### 5. Compile frontend assets
+```bash
+npm run build
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 6. Start the local server
+```bash
+php artisan serve
+```
+Visit **`http://127.0.0.1:8000`** in your browser.
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 👤 Demo Credentials
 
-## License
+For quick evaluation, use the pre-configured athlete account:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| Field | Demo Account |
+| :--- | :--- |
+| **Email** | `tanvir@fitnes.com` |
+| **Password** | `password` |
+| **Gym ID** | `FIT-010482` |
+| **Plan** | Pro Athlete Membership |
+
+---
+
+## 🧪 Automated Testing
+
+Run the automated PHPUnit test suite:
+
+```bash
+php artisan test --compact
+```
+
+```
+PASS  Tests\Feature\ExampleTest
+✓ that true is true
+
+PASS  Tests\Feature\FitnessTrackingAndStoreTest
+✓ store catalog page loads successfully
+✓ store checkout creates order
+✓ member profile page loads with fitness tracking
+✓ rfid turnstile check in records attendance
+✓ workout log creation and deletion
+✓ body progress weigh in submission
+✓ password reset endpoint handles json submission
+✓ password reset requires email
+✓ leaderboard page loads with pr wall
+
+PASS  Tests\Unit\ExampleTest
+✓ that true is true
+
+Tests:    12 passed (43 assertions)
+Duration: 1.27s
+```
+
+Format code according to PSR-12:
+```bash
+vendor/bin/pint --format agent
+```
+
+---
+
+## 📄 License
+
+This project is open-source software licensed under the **[MIT License](LICENSE)**.
+
+<div align="center">
+  <sub>Crafted with passion by <a href="https://github.com/tanvirahmadrahad">Tanvir Ahmad Rahad</a>. Built for athletes who strive for greatness.</sub>
+</div>
